@@ -1,0 +1,28 @@
+{
+  "name": "@receter/my-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "readme.md"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpile": "babel src -d lib --copy-files",
+    "prepublishOnly": "npm run transpile"
+  },
+  "author": "Andreas Riedmüller",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": ">=17.0.2",
+    "react-dom": ">=17.0.2",
+    "prop-types": ">=15.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "@babel/preset-react": "^7.18.6"
+  }
+}
