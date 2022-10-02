@@ -8,6 +8,7 @@
     "readme.md"
   ],
   "scripts": {
+    "watch": "babel src -d lib --copy-files --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "transpile": "babel src -d lib --copy-files",
     "prepublishOnly": "npm run transpile"
